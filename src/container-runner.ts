@@ -147,10 +147,7 @@ function buildVolumeMounts(
     settings.model = modelFromEnv;
   }
 
-  fs.writeFileSync(
-    settingsFile,
-    JSON.stringify(settings, null, 2) + '\n',
-  );
+  fs.writeFileSync(settingsFile, JSON.stringify(settings, null, 2) + '\n');
 
   // Sync skills from container/skills/ into each group's .claude/skills/
   const skillsSrc = path.join(process.cwd(), 'container', 'skills');
