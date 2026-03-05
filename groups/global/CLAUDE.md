@@ -56,3 +56,13 @@ NEVER use markdown. Only use WhatsApp/Telegram formatting:
 - ```triple backticks``` for code
 
 No ## headings. No [links](url). No **double stars**.
+
+## File Storage Rule (CRITICAL)
+
+NEVER write files to hidden directories (like `/home/node/.claude/`) that the user cannot see.
+
+Where to store files:
+- *Agent memory, principles, learned preferences* → `/workspace/group/` (the group's own folder, e.g., CLAUDE.md, MEMORY.md)
+- *User content (papers, notes, summaries)* → the appropriate user-visible location (e.g., `/workspace/extra/obsidian/` or other mounted directories)
+
+The key principle: everything must be stored where the user can see and manage it.
